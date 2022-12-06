@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="frameworks/bootstrap5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="frameworks/fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div id="logo"><a href="#"><img src="http://e-bookstore.uthm.edu.my/image/catalog/ebookstore.png" title="UTHM e-bookstore" alt="UTHM e-bookstore" class="img-responsive" /></a></div>
+				</div>
+				<div class="col-sm-5 mt-4"><div id="search" class="input-group">
+					<input type="text" name="search" value="" placeholder="Search" class="form-control input-lg" />
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	<div class="container-fluid">
+		<div class="row">
+		   <nav id="menu" class="navbar navbar-expand-md">
+			    <div class="navbar-header"><span id="category" class="visible-x">Categories</span>
+			      <button type="button" class="btn btn-navbar navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-md-collapse"><span class="navbar-toggler-icon"></span></button>
+			    </div>
+		    <div class="collapse navbar-collapse " id="navbar-md-collapse">
+		    <ul class="nav navbar-nav ms-5">
+		    	<li><a href="Contact.html">Contact</a></li>
+		    	<li><a href="Products.html">Product</a></li>
+		    	
+		    </ul>
+    		</div>
+  			</nav>
+		</div>
+	</div>
+	<div id="account-register" class="container">
+		<div class="row">
+			<div id="content" class="col-sm-12">
+				<h1 class="mt-5">Register Account</h1>
+				<form class="w-75">
+					<fieldset id="account">
+						<legend class="mt-4"><b>Your Personal Details</b></legend>
+						<div class="form-group required">
+							<label class="control-label mt-2" for="input-firstname">First Name</label>
+							<div class="my-2">
+								<input type="text" name="firstname" value="" placeholder="First Name" id="input-firstname" class="form-control py-2" />
+							</div>
+						</div>
+						<div class="form-group required">
+							<label class="control-label mt-3" for="input-lastname">Last Name</label>
+							<div class="my-2">
+								<input type="text" name="lastname" value="" placeholder="Last Name" id="input-lastname" class="form-control py-2" />
+							</div>
+						</div>
+						<div class="form-group required">
+							<label class="control-label mt-3" for="input-email">E-Mail</label>
+							<div class="my-2">
+								<input type="email" name="email" value="" placeholder="E-Mail" id="input-email" class="form-control py-2" />
+							</div>
+						</div>
+						<div class="form-group required">
+							<label class="control-label mt-3" for="input-telephone">Telephone</label>
+							<div class="my-2">
+								<input type="tel" name="telephone" value="" placeholder="Telephone" id="input-telephone" class="form-control py-2" />
+							</div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend class="mt-3"><b>Your Password</b></legend>
+						<div class="form-group required">
+							<label class="control-label mt-2" for="input-password">Password</label>
+							<div class="my-2">
+								<input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control py-2" />
+							</div>
+						</div>
+						<div class="form-group required">
+							<label class="control-label mt-3" for="input-confirm">Password Confirm</label>
+							<div class="my-2">
+								<input type="password" name="confirm" value="" placeholder="Password Confirm" id="input-confirm" class="form-control py-2" />
+							</div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend class="mt-3"><b>Newsletter</b></legend>
+						<div class="form-group">
+								<div class=" check-box">
+							<label class="my-1 me-3"><b>Subscribe:</b></label>
+									<label class="radio-inline me-3">
+										<input type="radio" name="newsletter" value="1" />
+										Yes
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="newsletter" value="0" checked="checked" />
+									No</label>
+							</div>
+						</div>
+					</fieldset>
+				<fieldset>
+					<legend class="mt-3"><b>Captcha</b></legend>
+					<div class="form-group required">
+						<label class="control-label mt-3" for="input-captcha">Enter the code in the box below</label>
+						<div class="my-2">
+							<input type="text" name="captcha" id="input-captcha" class="form-control py-2" />
+							<img src="index.php?route=extension/captcha/basic/captcha" alt="" />
+						</div>
+					</div>
+				</fieldset>
+
+				<div class="buttons">
+					<div class="pull-right">I have read and agree to the <a href="#" class="agree"><b>Privacy Policy</b></a>
+						<input type="checkbox" name="agree" value="1" />
+						&nbsp;
+						<input type="submit" class="btn btn-primary" />
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container py-1">
+		<div class="row">
+			<div class="col-md-3 col-sm-6 col-12">
+				<h5>Information</h5>
+				<ul class="list-unstyled">
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Delivery Information</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-6 col-12">
+				<h5>Customer Service</h5>
+				<ul class="list-unstyled">
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Returns</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-6 col-12">
+				<h5>Extras</h5>
+				<ul class="list-unstyled">
+					<li><a href="#">Brands</a></li>
+					<li><a href="#">Gift Certificates</a></li>
+					<li><a href="#">Affiliate</a></li>
+					<li><a href="#">Specials</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-6 col-12">
+				<h5>My Account</h5>
+				<ul class="list-unstyled">
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">Order History</a></li>
+					<li><a href="#">Wish List</a></li>
+					<li><a href="#">Newsletter</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p>Powered By <a href="#">OpenCart</a><br /> UTHM e-bookstore &copy; 2021</p>
+	</div>
+</footer>
+
+		<script type="text/javascript" src="frameworks/fontawesome/js/all.js"></script>
+		<script type="text/javascript" src="frameworks/bootstrap5/js/bootstrap.min.js"></script>
+
+	</body>
+	</html>
